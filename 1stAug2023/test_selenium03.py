@@ -8,7 +8,7 @@ def test_login():
     chrome_options = webdriver.ChromeOptions()
     # extension_path = "G:/CRX/adblocker1.crx"
     chrome_options.add_argument("--start-maximized")
-    #chrome_options.add_argument('--headless=new')
+    # chrome_options.add_argument('--headless=new')
     # chrome_options.add_extension(extension_path)
     driver = webdriver.Chrome(chrome_options)
     # driver.maximize_window()
