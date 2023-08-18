@@ -19,3 +19,8 @@ def test_vwologin():
     time.sleep(10)
     assert "Dashboard" in driver.title
     LOGGER.info("title is ->" + driver.title)
+
+    driver.refresh()
+    driver.get("https://sdet.live")
+    driver.back()
+    driver.forward()
