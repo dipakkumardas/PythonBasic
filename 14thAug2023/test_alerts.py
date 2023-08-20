@@ -13,7 +13,7 @@ def test_alerts_accept_testing():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://the-internet.herokuapp.com/javascript_alerts")
-    button = driver.find_element(By.XPATH,"//button[contains(text(),'JS Alert')]")
+    button = driver.find_element(By.XPATH, "//button[contains(text(),'JS Alert')]")
     button.click()
 
     wait = WebDriverWait(driver, 10)
@@ -25,6 +25,3 @@ def test_alerts_accept_testing():
     acceptalerttext = driver.find_element(By.XPATH, "//p[contains(text(),'You successfully clicked an alert')]")
     print(acceptalerttext.text)
     driver.quit()
-
-
-
