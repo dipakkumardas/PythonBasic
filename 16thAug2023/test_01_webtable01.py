@@ -27,10 +27,10 @@ def test_webtables():
             # print(dynamic_path)
             print(data.text, end=" ")
 
-            if "Helen Bennett" in data:
-                country_path = f"{dynamic_path}/following-sibling::td"
-                print(country_path)
-                country_text = driver.find_element(By.XPATH, country_path).text
-                print(f"Helen Bennet is in {country_text}")
+            # if "Helen Bennett" in data:
+            #     country_path = f"{dynamic_path}/following-sibling::td"
+            #     print(country_path)
+            #     country_text = driver.find_element(By.XPATH, country_path).text
+            #     print(f"Helen Bennet is in {country_text}")
 
 
